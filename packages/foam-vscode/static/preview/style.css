@@ -17,6 +17,66 @@
   color: var(--vscode-editorError-foreground);
 }
 
+.foam-back-link-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex;
+}
+
+.foam-back-link-item {
+  border: 4px rgb(0, 0, 0, 0) solid;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.foam-back-link-item:hover {
+  border: 4px rgb(22, 48, 18) solid;
+  background-color: rgba(180, 180, 180, 0.05);
+}
+
+.foam-back-link-item * {
+  padding: 0px !important;
+  margin: 0px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.foam-back-link-item .foam-blockquote {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.foam-back-link-item .foam-blockquote * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.foam-back-link-item a {
+  cursor: pointer;
+  flex: 1;
+}
+
+.foam-back-link-item a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.foam-blockquote {
+  color: grey !important;
+  font-size: 10pt;
+}
+
+.foam-blockquote * {
+  color: grey !important;
+  padding-left: 2em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
 .embed-container-note {
   padding: 0.5em;
   margin: 1.5em 0;

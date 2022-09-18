@@ -22,9 +22,11 @@ const feature: FoamFeature = {
           markdownItWikilinkNavigation,
           markdownItRemoveLinkReferences,
           markdownItShortLink,
+          markdownBacklinkFactory(foam.graph),
         ].reduce((acc, extension) => extension(acc, foam.workspace), md);
       },
     };
   },
 };
 export default feature;
+
