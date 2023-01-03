@@ -6,6 +6,7 @@ import { default as markdownItWikilinkNavigation } from './wikilink-navigation';
 import { default as markdownItRemoveLinkReferences } from './remove-wikilink-references';
 import { default as markdownItWikilinkEmbed } from './wikilink-embed';
 import { default as markdownItShortLink } from './xzr-shortlink';
+import { default as markdownBacklinkFactory } from './xzr-backlink';
 
 const feature: FoamFeature = {
   activate: async (
@@ -29,4 +30,3 @@ const feature: FoamFeature = {
   },
 };
 export default feature;
-
